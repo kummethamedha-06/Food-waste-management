@@ -1,0 +1,177 @@
+/* General Dashboard Styling */
+.dashboard-container {
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ddddf9;
+    color: #333;
+    padding: 20px;
+    border-radius: 0; /* Remove border-radius for full screen */
+    box-shadow: none; /* Remove shadow for full-screen layout */
+  }
+  .logout-button {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    background-color: #61cd85;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  
+  .logout-button:hover {
+    background-color: #1fff6a;
+  }
+  .admin-dashboard {
+    width: 100%;
+    max-width: 1400px; /* Increased size */
+    height: 90vh; /* Increased height to occupy most of the screen */
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow-y: auto; /* Adds scroll if needed */
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+  }
+  
+  .dashboard-info {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Section Styling */
+  .dashboard-section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Table Styling */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .table-header {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .table-row:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .table-row:hover {
+    background: #f1f1f1;
+  }
+  
+  .table-cell {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .table-header,
+    .table-cell {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  /* Feedback Section Styles */
+.feedback-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #dad0d0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.feedback-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feedback-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  text-align: center;
+}
+
+.feedback-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.feedback-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.feedback-info {
+  font-size: 1rem;
+  color: #666;
+}
+
+  

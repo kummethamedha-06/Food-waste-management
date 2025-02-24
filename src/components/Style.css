@@ -1,0 +1,1312 @@
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(to right, #333, #06C167);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Logo */
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover .line {
+  background-color: #ffe600;
+}
+
+/* Navbar */
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar ul li {
+  margin: 0 15px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-bar ul li a:hover {
+  color: #ffe600;
+}
+
+/* Donate Button */
+
+
+/* Add this rule to center the button */
+
+
+/* Hover effect for the button */
+.donate-btn:hover {
+  background-color: #048a4d;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-bar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-bar.open {
+    display: block;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .nav-bar ul li {
+    padding: 12px 0;
+  }
+}
+.main-wrapper{
+  background-image: url("main.jpeg");
+}
+/* Food Image Styling */
+.food-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.food-image img {
+  width: 100%;
+  max-width: 2600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.food-image img:hover {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 20px;
+  background-color: #06C167;
+  z-index: 0;
+}
+
+/* Responsive Styling */
+.photo {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  color: #06C167;
+}
+.photo p{
+  color: #161313;
+}
+.box p{
+  color: #161313;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  color: #161313;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box img:hover {
+  transform: scale(1.1);
+}
+
+/* Delivery Section */
+.deli {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 30px auto;
+  width: 80%;
+  color: #161313;
+}
+
+.deli .heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+}
+
+.deli .para {
+  font-size: 18px;
+  color: #161313;
+  margin-bottom: 20px;
+}
+
+.delivery-image {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #06C167;
+  color: #eee5e5;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  min-width: 360px;
+  padding: 10px;
+}
+
+.footer-right h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer-right .menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-right .menu a:hover {
+  color: #ffe600;
+}
+.footer img{
+  max-width: 20px;
+  height: auto;
+}
+ul.social {
+  display: flex; /* Align items in a row */
+  padding: 0;
+  list-style: none;
+  justify-content: center; /* Optional: Centers the items horizontally */
+}
+
+ul.social li {
+  margin: 0 10px; /* Optional: Add space between the items */
+}
+
+ul.social li a {
+  text-decoration: none; /* Optional: Removes underline from links */
+}
+
+ul.social li img {
+  max-width: 40px; /* Optional: Adjust image size */
+  height: auto;
+}
+
+
+/* About Section */
+.about-content {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f6e8e8;
+}
+
+.heading u {
+  color: #06C167;
+}
+
+.para p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fbf6f6;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.video-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.video-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #06C167;
+}
+
+iframe {
+  border-radius: 8px;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.form-container {
+  width: 400px;
+  background: rgb(185, 173, 173);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #06C167;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #05a34b;
+}
+
+/* Contact Info */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  
+}
+
+
+
+.donate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100vh; /* Ensure full height */
+  width: 100vw;  /* Ensure full width */
+  margin: 0;      /* Remove any default margin */
+  padding: 0;     /* Remove any default padding */
+  background-image: url("donate.jpg");
+  color: #161313; /* Optional background color */
+}
+.donate-highlight{
+text-align: center;
+}
+
+.donate-form {
+  gap: 5px;
+  width: 100%;
+  max-width: 500px; /* You can adjust this */
+  background: rgb(206, 247, 221);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Remove height: auto; Let the content determine the height */
+}
+.donate-btn {
+  padding: 15px 30px;
+  background-color: #06C167;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px; /* Added margin */
+}
+
+.radio-group label { /* Style the labels, not just the inputs */
+  font-weight: normal; /* Or whatever you prefer */
+}
+
+.radio-group input {
+  margin-right: 5px;
+}
+
+/* Image selection */
+.image-radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Added margin */
+}
+
+.image-radio {
+  text-align: center;
+}
+
+.image-radio img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  cursor: pointer; /* Make images clickable */
+}
+
+.image-radio input[type="radio"] { /* Hide the actual radio buttons */
+  display: none;
+}
+
+.image-radio label { /* Use labels for the images */
+  display: inline-block; /* Needed for label styling */
+  cursor: pointer;
+}
+.btn-container {
+  text-align: center;
+}
+
+button {
+  background: #06C167;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #71e588;
+}
+
+/* Media query for smaller screens (optional) */
+@media (max-width: 768px) {
+  .donate-form {
+    padding: 10px;
+  }
+
+  .image-radio img {
+    width: 80px;
+    height: 80px;
+  }
+}; /* Ensure full height */
+
+/* Form styling */
+.donate-form {
+  width: 100%;
+  max-width: 600px; /* You can adjust this */
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Remove height: auto; Let the content determine the height */
+}
+
+.image-radio input:checked + label img {
+  border: 5px solid #06C167;
+}
+
+/* Submit button */
+
+.donate-btn:hover {
+  background-color: #04a94d;
+}
+
+
+
+
+
+.input,
+.radio {
+  margin-bottom: 20px;
+}
+
+.input label,
+.radio label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input input,
+.radio input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.radio input {
+  margin-right: 10px;
+}
+
+.image-radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.image-radio-group input {
+  margin-right: 10px;
+}
+
+.image-radio-group label {
+  display: inline-block;
+  text-align: center;
+}
+
+.input select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn button {
+  background-color: #06C167;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn button:hover {
+  background-color: #04a94d;
+}
+.contact-wrapper{
+  background-image:url("food.jpg");
+}
+
+
+
+.contact-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  
+}
+.form-heading{
+  text-align: center;
+  color: #242926;
+}
+
+
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #06C167;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #04a94d;
+}
+
+.contact-information {
+  margin-top: 30px;
+  color: #161313;
+  font-size: 16px;
+}
+
+.contact-infornamtion a {
+  color: #06C167;
+}
+
+.chatbot {
+  margin-top: 40px;
+  color: #161313;
+}
+
+.help {
+  margin-top: 20px;
+  color: #161313;
+}
+
+.accordion {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  color: #161313;
+}
+
+.accordion:hover {
+  background-color: #ddd;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.accordion.active + .panel {
+  display: block;
+}
+.donate-food-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.donate-food-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 500px;
+  
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #bde4d3;
+  
+  
+}
+.our-mission-content {
+  text-align: center;
+  padding: 40px 20px;
+  
+  
+}
+
+.mission-statement {
+  margin-bottom: 40px;
+}
+
+.mission-statement h1 {
+  font-size: 36px;
+  color: #06C167;
+  margin-bottom: 20px;
+}
+
+.mission-statement p {
+  font-size: 22px;
+  color: #e2d9d9;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team-section h2 {
+  font-size: 32px;
+  color: #06C167;
+  margin-bottom: 30px;
+}
+
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  color: #ccc;
+}
+
+.team-member {
+  text-align: center;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  color: #ccc;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  color: #cccccc;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  color: #f5ecec;
+  margin: 10px 0 5px;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #eee2e2;
+  margin-bottom: 10px;
+}
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.donate-food-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.donate-food-form label {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.donate-food-form input,
+.donate-food-form textarea,
+.donate-food-form select {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.donate-food-form input[type="submit"] {
+  background-color: #06C167;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.donate-food-form input[type="submit"]:hover {
+  background-color: #04a94d;
+}
+
+footer .footer-left, .footer-center, .footer-right {
+  text-align: center;
+}
+
+footer .footer-center {
+  margin-top: 20px;
+}
+
+footer .footer-center .sociallist ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-center .sociallist ul li {
+  margin: 0 10px;
+}
+
+footer .footer-center .sociallist ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+
+.regform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #424141;
+  position: relative;
+}
+
+.regform {
+  background: white;
+  padding: 30px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.regform .logo {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input {
+  margin-bottom: 15px;
+}
+
+.input label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input input,
+.input select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.radio {
+  margin-bottom: 15px;
+}
+
+.radio input {
+  margin-right: 5px;
+}
+
+.image-radio-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-radio-group div {
+  text-align: center;
+}
+
+.image-radio-group img {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.image-radio-group input:checked + label img {
+  border-color: #06C167;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn button {
+  background-color: #06C167;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  background-color: #048c4a;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #06C167;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Dropdown Content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: rgb(70, 79, 74);
+  min-width: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a, .dropdown-content button {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover, .dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Hide dropdown when not active */
+.dropdown-content {
+  display: none;
+}
+
+/* Show dropdown when state is open */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Register.css */
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("food.jpg");
+  color: #161313;
+}
+
+.register-container {
+  background-color: rgb(220, 206, 206);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust as needed */
+}
+
+@media (min-width: 768px) {
+  .register-container.laptop-view {
+    width: 700px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    color: #161313;
+  }
+
+  .input-group {
+    grid-column: span 1;
+  }
+}
+.image-container {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  margin-bottom: 20px; /* Add some space below the image */
+}
+
+.register-image {
+  width: 200px; /* Adjust the maximum width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
+.register-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Important: Include padding and border in element's total width and height */
+}
+
+.register-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add a transition for hover effect */
+}
+
+.register-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.register-btn:disabled {
+  background-color: #cccccc; /* Grayed out when disabled */
+  cursor: not-allowed;
+}
+
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+
+.login-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Error and Success Messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Main Heading Above the Box */
+.register-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.register-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Register button styling */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #06C167;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.register-btn:hover {
+  background-color: #048C50;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Login link styling */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #06C167;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+/* Centering the login form */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("food.jpg");
+}
+.logout-wrapper {
+  display: flex;
+
+  color: #161313;
+  font-size: large;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("thank.jpg");
+}
+.login-wrapper h1 {
+  align-items: center; /* Positioning the element */
+          /* Move element to the middle horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  text-align: center;  /* Center the text itself */
+}
+
+/* Login box styling */
+.login-container {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  padding: 35px;
+  color: #282727;
+  background: rgb(200, 193, 193);
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+/* Style for input fields */
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for login button */
+.login-container button {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: #06C167;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #048a4e;
+}
+
+/* Register link styling */
+.register-link {
+  margin-top: 10px;
+}
+/* Style.css */
+.input-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  padding-left: 30px;  /* Space for the image */
+  padding-right: 10px;
+  height: 40px;
+  width: 90%;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-container .input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust icon size */
+  height: 18px;
+}
+.login-image img {
+  width: 100%; /* Adjust as per your need */
+  min-height: 20%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+

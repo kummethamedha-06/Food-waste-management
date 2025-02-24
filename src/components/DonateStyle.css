@@ -1,0 +1,133 @@
+/* Overall container */
+.donate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+}
+
+/* Form styling */
+.donate-form {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #06C167;
+}
+
+/* Input and labels */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Radio buttons */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+/* Image selection */
+.image-radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-radio {
+    text-align: center;
+}
+
+.image-radio img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.image-radio input[type="radio"] {
+    display: none;
+}
+
+.image-radio label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.image-radio input:checked + label img {
+    border: 2px solid #06C167;
+}
+
+/* Submit button */
+.btn-container {
+    text-align: center;
+}
+
+button {
+    background: #06C167;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #04a357;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .donate-form {
+        padding: 20px;
+    }
+
+    .image-radio img {
+        width: 50px;
+        height: 50px;
+    }
+}
